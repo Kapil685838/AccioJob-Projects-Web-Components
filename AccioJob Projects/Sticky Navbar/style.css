@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar styling start */
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-items {
+    display: flex;
+    gap: 30px;
+}
+.nav-items > a.active {
+    color: red !important;
+    border-bottom: 1px solid red;
+}
+/* Navbar styling end */
+
+/* Main Content styling start */
+.container {
+    max-width: 1200px;
+    margin: 15px auto;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-col {
+    width: 60%;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+.left-col h1,
+.left-col p,
+.left-col .btn{
+    margin-bottom: 15px;    
+}
+.right-col {
+    width: 40%;
+}
+.right-col .img {
+    width: 100%;
+    padding: 15px;
+}
+.right-col .img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.btn {
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Main Content styling end */
